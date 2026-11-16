@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KM Plasterers | Plastering Services in Staffordshire</title>
+  <meta
+    name="description"
+    content="KM Plasterers provides skimming, reskimming, plasterboarding and plaster repairs throughout Staffordshire. A trusted local business with 40 years of experience."
+  >
+
+  <style>
+    :root {
+      --navy: #152330;
+      --navy-light: #213746;
+      --orange: #e8782e;
+      --orange-dark: #c95d19;
+      --cream: #f5f1ea;
+      --white: #ffffff;
+      --text: #26343e;
+      --muted: #69757d;
+      --border: #dde2e5;
+      --shadow: 0 18px 45px rgba(17, 31, 42, 0.12);
+      --radius: 18px;
+      --max-width: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      color: var(--text);
+      background: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max-width));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--orange);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--navy);
+      line-height: 1.12;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(2.8rem, 7vw, 5.7rem);
+      letter-spacing: -0.055em;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 44px;
+    }
+
+    .section-heading p {
+      max-width: 620px;
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 25px;
+      border: 2px solid transparent;
+      border-radius: 9px;
+      background: var(--orange);
+      color: var(--white);
+      font-weight: 800;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--orange-dark);
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      border-color: rgba(255, 255, 255, 0.65);
+      background: transparent;
+    }
+
+    .button-outline:hover {
+      border-color: var(--white);
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    .top-bar {
+      padding: 8px 0;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .site-header {
+      position: sticky;
+      z-index: 1000;
+      top: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(21, 35, 48, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .navigation {
+      display: flex;
+      min-height: 76px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      color: var(--white);
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .logo span {
+      color: var(--orange);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #d9e0e4;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-links .nav-call {
+      padding: 10px 16px;
+      border-radius: 7px;
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .menu-button {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: var(--white);
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 720px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(15, 28, 38, 0.96) 0%, rgba(15, 28, 38, 0.82) 45%, rgba(15, 28, 38, 0.25) 100%),
+        url("[images.unsplash.com](https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=85)")
+        center/cover;
+      color: var(--white);
+    }
+
+    .hero::after {
+      position: absolute;
+      right: -120px;
+      bottom: -170px;
+      width: 470px;
+      height: 470px;
+      border: 80px solid rgba(232, 120, 46, 0.15);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 830px;
+      padding: 100px 0;
+    }
+
+    .hero h1 {
+      color: var(--white);
+    }
+
+    .hero h1 span {
+      color: var(--orange);
+    }
+
+    .hero-description {
+      max-width: 670px;
+      margin: 24px 0 32px;
+      color: #e2e8eb;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 42px;
+      color: #e9edef;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .trust-row span::before {
+      margin-right: 8px;
+      color: var(--orange);
+      content: "✓";
+    }
+
+    .experience {
+      background: var(--cream);
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .experience-image {
+      position: relative;
+    }
+
+    .experience-image img {
+      height: 540px;
+      border-radius: var(--radius);
+      object-fit: cover;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-badge {
+      position: absolute;
+      right: -25px;
+      bottom: 28px;
+      width: 165px;
+      padding: 24px 15px;
+      border: 7px solid var(--cream);
+      border-radius: 16px;
+      background: var(--orange);
+      color: var(--white);
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-badge strong {
+      display: block;
+      font-size: 2.7rem;
+      line-height: 1;
+    }
+
+    .experience-badge span {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .experience-copy p {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+      list-style: none;
+    }
+
+    .feature-list li {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--white);
+      font-weight: 700;
+    }
+
+    .feature-list li::before {
+      margin-right: 8px;
+      color: var(--orange);
+      content: "✓";
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 10px 35px rgba(17, 31, 42, 0.07);
+      transition: 0.25s ease;
+    }
+
+    .service-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-6px);
+    }
+
+    .service-card img {
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 25px;
+    }
+
+    .service-number {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--orange);
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+    }
+
+    .service-content p {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .service-card:last-child {
+      grid-column: 2 / 3;
+    }
+
+    .gallery {
+      background: var(--navy);
+    }
+
+    .gallery h2 {
+      color: var(--white);
+    }
+
+    .gallery .section-heading p {
+      color: #b9c4ca;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr 0.8fr;
+      grid-template-rows: repeat(2, 220px);
+      gap: 16px;
+    }
+
+    .gallery-grid img {
+      height: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+
+    .gallery-grid img:first-child {
+      grid-row: 1 / 3;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .process-step {
+      padding: 28px 24px;
+      border-radius: 14px;
+      background: var(--cream);
+    }
+
+    .step-number {
+      display: grid;
+      width: 45px;
+      height: 45px;
+      margin-bottom: 20px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--orange);
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .process-step p {
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .contact {
+      background: var(--cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 55px;
+    }
+
+    .contact-copy p {
+      margin-top: 18px;
+      color: var(--muted);
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .contact-item {
+      padding: 18px;
+      border-left: 4px solid var(--orange);
+      background: var(--white);
+      box-shadow: 0 8px 25px rgba(17, 31, 42, 0.06);
+    }
+
+    .contact-item small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .contact-item a,
+    .contact-item strong {
+      display: block;
+      margin-top: 3px;
+      color: var(--navy);
+      font-size: 1.08rem;
+      font-weight: 800;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 17px;
+      padding: 32px;
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .form-group {
+      display: grid;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--navy);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      background: #fbfcfc;
+      padding: 13px;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(232, 120, 46, 0.13);
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .form-status {
+      display: none;
+      grid-column: 1 / -1;
+      padding: 12px;
+      border-radius: 8px;
+      background: #e8f5ec;
+      color: #236b38;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 34px 0;
+      background: #0d1820;
+      color: #aeb9bf;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .footer .logo {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 900px) {
+      .menu-button {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 15px 20px 22px;
+        background: var(--navy);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 13px 0;
+      }
+
+      .nav-links .nav-call {
+        margin-top: 8px;
+        padding: 12px 16px;
+        text-align: center;
+      }
+
+      .experience-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-card:last-child {
+        grid-column: auto;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      .section {
+        padding: 68px 0;
+      }
+
+      .hero {
+        min-height: 670px;
+        background-position: 60% center;
+      }
+
+      .hero-content {
+        padding: 75px 0;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .trust-row {
+        display: grid;
+        gap: 10px;
+      }
+
+      .experience-image img {
+        height: 400px;
+      }
+
+      .experience-badge {
+        right: 12px;
+      }
+
+      .feature-list,
+      .services-grid,
+      .process-grid,
+      .contact-form {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 180px 180px;
+      }
+
+      .gallery-grid img:first-child {
+        grid-column: 1 / 3;
+        grid-row: auto;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .footer-row {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    Local plastering specialists serving Staffordshire for 40 years
+  </div>
+
+  <header class="site-header">
+    <div class="container navigation">
+      <a class="logo" href="#home">KM <span>PLASTERERS</span></a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#contact">Contact</a>
+
+        <!-- Replace with your telephone number -->
+        <a class="nav-call" href="tel:07123456789">Call 07123 456789</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <span class="eyebrow">Staffordshire's local plastering specialists</span>
+
+        <h1>
+          Smooth finishes.<br>
+          Built to <span>last.</span>
+        </h1>
+
+        <p class="hero-description">
+          KM Plasterers provides dependable skimming, reskimming,
+          plasterboarding and plaster repairs throughout Staffordshire.
+          We bring 40 years of local experience to every job.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#contact">Request a free quote</a>
+          <a class="button button-outline" href="#services">Explore our services</a>
+        </div>
+
+        <div class="trust-row">
+          <span>40 years of experience</span>
+          <span>Local Staffordshire business</span>
+          <span>Free, no-obligation quotes</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="about">
+      <div class="container experience-grid">
+        <div class="experience-image">
+          <!-- Replace this image with a photo of your own work -->
+          <img
+            src="[images.unsplash.com](https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85)"
+            alt="Experienced tradesperson working on an interior renovation"
+          >
+
+          <div class="experience-badge">
+            <strong>40</strong>
+            <span>Years serving the local area</span>
+          </div>
+        </div>
+
+        <div class="experience-copy">
+          <span class="eyebrow">About KM Plasterers</span>
+          <h2>Local experience you can rely on</h2>
+
+          <p>
+            For four decades, KM Plasterers has helped homeowners and
+            businesses improve their properties with high-quality plastering.
+            We are proud to be a local Staffordshire business built on careful
+            work, honest advice and dependable service.
+          </p>
+
+          <p>
+            Whether you need one damaged wall repaired or an entire property
+            reskimmed, we approach every project with the same care and
+            attention to detail.
+          </p>
+
+          <ul class="feature-list">
+            <li>Clean and tidy work</li>
+            <li>Quality finishes</li>
+            <li>Friendly local service</li>
+            <li>Jobs of all sizes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">What we do</span>
+          <h2>Professional plastering services</h2>
+          <p>
+            From refreshing tired walls to preparing complete rooms, we provide
+            practical plastering solutions for homes and local businesses.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <img
+              src="[images.unsplash.com](https://images.unsplash.com/photo-1523413363574-c30aa1c2a516?auto=format&fit=crop&w=900&q=85)"
+              alt="Smooth newly plastered interior wall"
+              loading="lazy"
+            >
+            <div class="service-content">
+              <span class="service-number">01 / SKIMMING</span>
+              <h3>Skimming</h3>
+              <p>
+                A smooth, even finish for new walls and ceilings, ready for
+                decorating once fully dry.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="[images.unsplash.com](https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85)"
+              alt="Renovated modern room with smooth walls"
+              loading="lazy"
+            >
+            <div class="service-content">
+              <span class="service-number">02 / RESKIMMING</span>
+              <h3>Reskimming</h3>
+              <p>
+                Refresh cracked, uneven or tired surfaces without replacing the
+                entire wall.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="[images.unsplash.com](https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=900&q=85)"
+              alt="Interior renovation and plasterboard installation"
+              loading="lazy"
+            >
+            <div class="service-content">
+              <span class="service-number">03 / PLASTERBOARDING</span>
+              <h3>Plasterboarding</h3>
+              <p>
+                New plasterboard installation for walls, ceilings, extensions
+                and renovation projects.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="[images.unsplash.com](https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=85)"
+              alt="Tradesperson repairing and finishing a wall"
+              loading="lazy"
+            >
+            <div class="service-content">
+              <span class="service-number">04 / REPAIRS</span>
+              <h3>Plaster Repairs</h3>
+              <p>
+                Reliable repairs for cracks, holes, damaged sections and areas
+                affected by renovation work.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Our work</span>
+          <h2>Careful preparation. Quality results.</h2>
+          <p>
+            Replace these sample photographs with images of your completed
+            projects to show customers the quality of your work.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <img
+            src="[images.unsplash.com](https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85)"
+            alt="Completed modern interior"
+            loading="lazy"
+          >
+          <img
+            src="[images.unsplash.com](https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85)"
+            alt="Smooth finished walls in a renovated room"
+            loading="lazy"
+          >
+          <img
+            src="[images.unsplash.com](https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85)"
+            alt="Bright completed home interior"
+            loading="lazy"
+          >
+          <img
+            src="[images.unsplash.com](https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=800&q=85)"
+            alt="Newly completed interior renovation"
+            loading="lazy"
+          >
+          <img
+            src="[images.unsplash.com](https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=85)"
+            alt="Finished room with clean modern walls"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">How it works</span>
+          <h2>Simple from quote to completion</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <span class="step-number">1</span>
+            <h3>Get in touch</h3>
+            <p>Tell us about the work you need and where you are located.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">2</span>
+            <h3>Free quote</h3>
+            <p>We assess the job and provide a clear, no-obligation quotation.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">3</span>
+            <h3>Work begins</h3>
+            <p>We protect the area, prepare the surfaces and complete the work.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">4</span>
+            <h3>Quality finish</h3>
+            <p>We leave you with smooth surfaces and a clean, tidy space.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow">Free quotations</span>
+          <h2>Tell us about your plastering project</h2>
+
+          <p>
+            Contact KM Plasterers to discuss your job and arrange a free,
+            no-obligation quote anywhere in Staffordshire.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <small>Telephone</small>
+              <!-- Replace with your telephone number -->
+              <a href="tel:07123456789">07123 456789</a>
+            </div>
+
+            <div class="contact-item">
+              <small>Email</small>
+              <!-- Replace with your real email address -->
+              <a href="mailto:hello@kmplasterers.co.uk">
+                hello@kmplasterers.co.uk
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <small>Service area</small>
+              <strong>Staffordshire and surrounding areas</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="quoteForm">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telephone number</label>
+            <input id="phone" name="phone" type="tel" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="postcode">Postcode</label>
+            <input id="postcode" name="postcode" type="text">
+          </div>
+
+          <div class="form-group full">
+            <label for="service">Service required</label>
+            <select id="service" name="service">
+              <option value="Skimming">Skimming</option>
+              <option value="Reskimming">Reskimming</option>
+              <option value="Plasterboarding">Plasterboarding</option>
+              <option value="Repairs">Plaster repairs</option>
+              <option value="Other">Other plastering work</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label for="message">Tell us about the job</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="For example: two bedrooms need reskimming..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="button form-group full" type="submit">
+            Request my free quote
+          </button>
+
+          <p class="form-status" id="formStatus" role="status">
+            Thank you. Your enquiry is ready to be sent.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <a class="logo" href="#home">KM <span>PLASTERERS</span></a>
+
+      <p>
+        © <span id="currentYear"></span> KM Plasterers. Serving Staffordshire.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+    const quoteForm = document.getElementById("quoteForm");
+    const formStatus = document.getElementById("formStatus");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+
+    document.querySelectorAll("#navLinks a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.textContent = "☰";
+      });
+    });
+
+    quoteForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      /*
+        This demonstration shows a confirmation message.
+        Connect the form to your email service or website backend
+        before publishing so that enquiries are actually delivered.
+      */
+
+      formStatus.style.display = "block";
+      quoteForm.reset();
+    });
+
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
